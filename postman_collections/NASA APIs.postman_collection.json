@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "7db68f80-1e49-48f5-928b-8c59c557fa96",
+		"name": "NASA APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14553610"
+	},
+	"item": [
+		{
+			"name": "APOD API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=Dfdh7TOZpBcvKklJ3kiydNbVH17HzEzMKQLcKa2X",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "Dfdh7TOZpBcvKklJ3kiydNbVH17HzEzMKQLcKa2X"
+						},
+						{
+							"key": "count",
+							"value": "100",
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2023-10-16",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NASA IMAGE AND VIDEO LIBRARY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://images-api.nasa.gov/search?q=JWST",
+					"protocol": "https",
+					"host": [
+						"images-api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "JWST"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
